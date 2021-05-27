@@ -1,6 +1,6 @@
 base:
   project: wineq_mlops
-  randome_state: 508
+  random_state: 508
   target_col : TARGET
 
 data_source:
