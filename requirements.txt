@@ -28,3 +28,5 @@ wrapt==1.12.1
 dvc
 dvc[gdrive]
 sklearn
+pytest
+tox
