@@ -36,3 +36,4 @@ pytest
 tox
 flask
 joblib
+gunicorn
