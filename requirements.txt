@@ -36,5 +36,3 @@ pytest
 tox
 flask
 joblib
-yaml
-numpy
