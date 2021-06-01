@@ -37,3 +37,4 @@ tox
 flask
 joblib
 gunicorn
+mlflow
