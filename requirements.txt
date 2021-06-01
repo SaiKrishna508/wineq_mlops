@@ -11,4 +11,5 @@ tox
 flake8
 flask
 gunicorn
+pygit2
 mlflow
