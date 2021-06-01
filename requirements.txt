@@ -11,5 +11,5 @@ tox
 flake8
 flask
 gunicorn
-pygit2
+pygit2>=1.5.0
 mlflow
