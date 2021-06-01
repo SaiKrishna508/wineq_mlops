@@ -7,6 +7,7 @@ import numpy as np
 params_path = "params.yaml"
 schema_path = os.path.join("prediction_service", "schema_in.json")
 
+
 class NotInRange(Exception):
     def __init__(self, message="Values entered are not in range"):
         self.message = message
@@ -79,7 +80,10 @@ def api_response(dict_request):
             response = predict(data)
             response = {"response": response}
             return response
-    except Exception as e:
-        response = {"the expected range": get_schema(),
-                    "response": str(e)}
+    except NotInRange as e:
+        response = {"the expected range": get_schema(), "response": str(e)}
+        return response
+
+    except NotInCols as e:
+        response = {"the expected cols": list(get_schema().keys()), "response": str(e)}
         return response
